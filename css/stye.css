@@ -172,6 +172,10 @@ html {
   margin-right: 30px;
 }
 
+.header__action-link {
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -342,6 +346,7 @@ html {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   border: 0;
+  cursor: pointer;
 }
 .home__btn:hover {
   background: #117361;
@@ -878,6 +883,27 @@ html {
       -ms-flex: 0 0 33.333%;
           flex: 0 0 33.333%;
   margin-bottom: 50px;
+}
+
+.palo-footer__link {
+  cursor: pointer;
+}
+.palo-footer__link:hover {
+  text-decoration: underline;
+}
+
+.blog-footer__link {
+  cursor: pointer;
+}
+.blog-footer__link:hover {
+  text-decoration: underline;
+}
+
+.contact-footer__link {
+  cursor: pointer;
+}
+.contact-footer__link:hover {
+  text-decoration: underline;
 }
 
 .f-c-geo::before {
