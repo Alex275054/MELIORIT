@@ -704,6 +704,9 @@ html {
 /* Активная точка */
 /* Элемент точки */
 .question__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,8 +724,16 @@ html {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.5;
-  padding: 0 10px 0 0;
+  padding: 0 10px 15px 0;
   margin: 0 100px 50px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: calc(24px + 1.25vw);
+}
+@media (max-width: 1300px) {
+  .question__title {
+    margin: 0 30px 50px;
+  }
 }
 
 .question__spollers {
