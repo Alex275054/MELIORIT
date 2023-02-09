@@ -1,280 +1,332 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>MELIORIT</title>
-	<link rel="stylesheet" href="css/stye.css">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230209165632">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class='header__container'>
-				<div class="header__body">
-					<div class="header__logo-text">
-						<p class="header__logo-link">
-							<a href="#home" class="header__logo">
-								<img src="img/header/logo.png" alt="Логотип">
-							</a>
-						</p>
-						<p class="header__text-logo">
-							Официальный поставщик <br>
-							Palo Alto и Fortinet в России
-						</p>
-					</div>
-					<nav class="header__menu">
-						<ul class="header__list">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div data-goto=".home" class="header__logo">
+							<div class="header__logo-img">
+								<a href="#" class="header__logo-link"">
+							<img src=" img/header/logo.png" alt="Логотип" class="header__img-main">
+								</a>
+							</div>
+							<div class="header__logo-text">
+								Официальный поставщи
+								Palo Alto и Fortinet в России
+							</div>
+						</div>
+						<ul class="menu__list">
 							<li>
-								<a href="#home" class="header__link">Межсетевые экраны</a>
+								<a href="#" data-goto=".home" class="menu__link">Межсетевые экраны</a>
 							</li>
 							<li>
-								<a href="#help" class="header__link">Консалтинг и аудит</a>
+								<a href="#" data-goto=".help" class="menu__link">Консалтинг и аудит</a>
 							</li>
 							<li>
-								<a href="#news" class="header__link">Блог</a>
+								<a href="#" data-goto=".popular" class="menu__link">Модели</a>
 							</li>
 							<li>
-								<a href="#footer" class="header__link">О компании</a>
+								<a href="#" data-goto=".news" class="menu__link">Блог</a>
+							</li>
+							<li>
+								<a href="#" data-goto=".popular" class="menu__link">О компании</a>
 							</li>
 						</ul>
+						<div class="header__action">
+							<a href="#" class="header__action-link-fav">
+								<img src="img/header/favorite.svg" alt="" class="header__fav">
+							</a>
+							<a href="#" class="header__action-link-bas">
+								<img src="img/header/basket.svg" alt="" class="header__buy">
+							</a>
+						</div>
 					</nav>
-					<div class="header__action">
-						<a href="#" class="header__action-link">
-							<img src="img/header/favorite.svg" alt="" class="header__fav">
-						</a>
-						<a href="#" class="header__action-link">
-							<img src="img/header/basket.svg" alt="" class="header__buy">
-						</a>
-					</div>
-					<div class="header__burger">
-						<span></span>
-					</div>
 				</div>
 			</div>
 		</header>
-		<section id="home">
-			<div class="home__container">
-				<div class="home__body">
-					<h1 class="home__title">
-						Межсетевые <br> экраны <span>нового</span><br> поколения
-					</h1>
-					<p class="home__text">
-						Сократите затраты на обеспечение информационной <br> безопасности и окупите вложения уже через шесть
-						месяцев
-					</p>
-					<button class="home__btn">Читать статью</button>
-				</div>
-				<div class="home__img">
-					<img src="img/home/main-home-img.png" alt="" class="home__main-img">
-				</div>
-			</div>
-		</section>
-		<section id="help">
-			<div class="help__container">
-				<div class="help__img">
-					<img src="img/help/01.png" alt="" class="help__img-main">
-				</div>
-				<div class="help__body">
-					<h2 class="help__title">
-						Помощь <br> в выборе <br> модели
-					</h2>
-					<p class="help__text">
-						Сколько компьютеров в вашей <br> локальной сети?
-					</p>
-					<div class="help__action">
-						<button class="help__btn help__btn_empty"></button>
-						<button class="help__btn btn">Продолжить</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="popular">
-			<div class="popular__container">
-				<div class="popular__header">
-					<h2 class="popular__title">Популярные модели</h2>
-					<a href="#" class="popular__question">Какую модель выбрать?</a>
-				</div>
-				<div class="swiper-container popular__items pi">
-					<div class="popular__item item-popular swiper-slide">
-						<h3 class="item-popular__title">PA-220</h3>
-						<p class="item-popular__text">
-							Подходит для небольших <br> организаций, филиалов и <br> торговых точек
+		<main class="page">
+			<section class="home">
+				<div class="home__container">
+					<div class="home__body">
+						<h1 class="home__title">
+							Межсетевые <br> экраны <span>нового</span><br> поколения
+						</h1>
+						<p class="home__text">
+							Сократите затраты на обеспечение информационной <br> безопасности и окупите вложения уже через
+							шесть
+							месяцев
 						</p>
-						<img src="img/popular/01.png" alt="" class="item-popular__img">
-						<div class="item-popular__feauters">
-							<div class="item-popular__feauter-one">
-								<p>Пропускная <br> способность</p>
-								<p class="item-popular__nums">500 Mbps</p>
-							</div>
-							<div class="item-popular__feauter-two">
-								<p>
-									Максимальное <br> кол-во сессий
-								</p>
-								<p class="item-popular__nums">64 000</p>
-							</div>
-						</div>
+						<button class="home__btn">Читать статью</button>
 					</div>
-					<div class="popular__item item-popular swiper-slide">
-						<h3 class="item-popular__title">PA-800</h3>
-						<p class="item-popular__text">
-							Подходит для небольших организаций, филиалов и торговых точек
+					<div class="home__img">
+						<picture><source srcset="img/home/main-home-img.webp" type="image/webp"><img src="img/home/main-home-img.png" alt="" class="home__img-main"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="help">
+				<div class="help__container">
+					<div class="help__img">
+						<picture><source srcset="img/help/01.webp" type="image/webp"><img src="img/help/01.png" alt="" class="help__img-main"></picture>
+					</div>
+					<div class="help__body">
+						<h2 class="help__title">
+							Помощь <br> в выборе <br> модели
+						</h2>
+						<p class="help__text">
+							Сколько компьютеров в вашей <br> локальной сети?
 						</p>
-						<img src="img/popular/02.png" alt="" class="item-popular__img">
-						<div class="item-popular__feauters">
-							<div class="item-popular__feauter-one">
-								<p>Пропускная <br> способность</p>
-								<p class="item-popular__nums">1 900 Mbps</p>
-							</div>
-							<div class="item-popular__feauter-two">
-								<p>
-									Максимальное <br> кол-во сессий
+						<div class="help__action">
+							<button class="help__btn help__btn_empty"></button>
+							<button class="help__btn btn">Продолжить</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="popular">
+				<div class="popular__container">
+					<div class="popular__header">
+						<h2 class="popular__title">Популярные модели</h2>
+						<a href="#" class="popular__question">Какую модель выбрать?</a>
+					</div>
+
+					<!-- Оболочка слайдера -->
+					<div class="popular__items items-popular swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="items-popular__wrapper swiper-wrapper">
+							<!-- переписать все -->
+							<!-- Слайд -->
+							<div class="popular__items-slide item-popular swiper-slide">
+								<h3 class="item-popular__title">PA-220</h3>
+								<p class="item-popular__text">
+									Подходит для небольших <br> организаций, филиалов и <br> торговых точек
 								</p>
-								<p class="item-popular__nums">192 000</p>
+								<div class="item-popular__img">
+									<picture><source srcset="img/popular/01.webp" type="image/webp"><img src="img/popular/01.png" alt="" class="item-popular__img-main"></picture>
+								</div>
+								<div class="item-popular__feauters">
+									<div class="item-popular__feauter-one">
+										<p>Пропускная <br> способность</p>
+										<p class="item-popular__nums">500 Mbps</p>
+									</div>
+									<div class="item-popular__feauter-two">
+										<p>
+											Максимальное <br> кол-во сессий
+										</p>
+										<p class="item-popular__nums">64 000</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="popular__item item-popular swiper-slide">
-						<h3 class="item-popular__title">PA-3200</h3>
-						<p class="item-popular__text">
-							Подходит для небольших организаций, филиалов и торговых точек
-						</p>
-						<img src="img/popular/03.png" alt="" class="item-popular__img">
-						<div class="item-popular__feauters">
-							<div class="item-popular__feauter-one">
-								<p>Пропускная <br> способность</p>
-								<p class="item-popular__nums">8,8 Gbps</p>
-							</div>
-							<div class="item-popular__feauter-two">
-								<p>
-									Максимальное <br> кол-во сессий
+							<!-- Слайд -->
+							<div class="popular__items-slide item-popular swiper-slide">
+								<h3 class="item-popular__title">PA-800</h3>
+								<p class="item-popular__text">
+									Подходит для небольших организаций, филиалов и торговых точек
 								</p>
-								<p class="item-popular__nums">3 000 000</p>
+								<picture><source srcset="img/popular/02.webp" type="image/webp"><img src="img/popular/02.png" alt="" class="item-popular__img"></picture>
+								<div class="item-popular__feauters">
+									<div class="item-popular__feauter-one">
+										<p>Пропускная <br> способность</p>
+										<p class="item-popular__nums">1 900 Mbps</p>
+									</div>
+									<div class="item-popular__feauter-two">
+										<p>
+											Максимальное <br> кол-во сессий
+										</p>
+										<p class="item-popular__nums">192 000</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="popular__item item-popular swiper-slide">
-						<h3 class="item-popular__title">PA-400</h3>
-						<p class="item-popular__text">
-							Подходит для небольших организаций, филиалов и торговых точек
-						</p>
-						<img src="img/popular/04.png" alt="" class="item-popular__img">
-						<div class="item-popular__feauters">
-							<div class="item-popular__feauter-one">
-								<p>Пропускная <br> способность</p>
-								<p class="item-popular__nums">5,2/4,7 Gbps</p>
-							</div>
-							<div class="item-popular__feauter-two">
-								<p>
-									Максимальное <br> кол-во сессий
+							<!-- Слайд -->
+							<div class="popular__items-slide item-popular swiper-slide">
+								<h3 class="item-popular__title">PA-3200</h3>
+								<p class="item-popular__text">
+									Подходит для небольших организаций, филиалов и торговых точек
 								</p>
-								<p class="item-popular__nums">400 000</p>
+								<picture><source srcset="img/popular/03.webp" type="image/webp"><img src="img/popular/03.png" alt="" class="item-popular__img"></picture>
+								<div class="item-popular__feauters">
+									<div class="item-popular__feauter-one">
+										<p>Пропускная <br> способность</p>
+										<p class="item-popular__nums">8,8 Gbps</p>
+									</div>
+									<div class="item-popular__feauter-two">
+										<p>
+											Максимальное <br> кол-во сессий
+										</p>
+										<p class="item-popular__nums">3 000 000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="popular__items-slide item-popular swiper-slide">
+								<h3 class="item-popular__title">PA-400</h3>
+								<p class="item-popular__text">
+									Подходит для небольших организаций, филиалов и торговых точек
+								</p>
+								<picture><source srcset="img/popular/04.webp" type="image/webp"><img src="img/popular/04.png" alt="" class="item-popular__img"></picture>
+								<div class="item-popular__feauters">
+									<div class="item-popular__feauter-one">
+										<p>Пропускная <br> способность</p>
+										<p class="item-popular__nums">5,2/4,7 Gbps</p>
+									</div>
+									<div class="item-popular__feauter-two">
+										<p>
+											Максимальное <br> кол-во сессий
+										</p>
+										<p class="item-popular__nums">400 000</p>
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="swiper-navigation">
+							<!-- Если нужна навигация (влево/вправо) -->
+							<button type="button" class="swiper-button-prev">
+								<img src="img/bal.svg" alt="swiper-button-prev-img">
+							</button>
+							<button type="button" class="swiper-button-next">
+								<img src="img/bar.svg" alt="swiper-button-next-img">
+							</button>
+						</div>
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar"></div>
 					</div>
+
+					<a class="popular__btn btn">Все модели</a>
 				</div>
-				<button class="popular__btn btn">Все модели</button>
-			</div>
-		</section>
-		<section class="subscriptions">
-			<div class="subscriptions__container">
-				<div class="subscriptions__header">
-					<h2 class="subscriptions__title">Подписки</h2>
-					<a href="#" class="subscriptions__question">Как выбрать подписку?</a>
+			</section>
+			<section class="subscriptions">
+				<div class="subscriptions__container">
+					<div class="subscriptions__header">
+						<h2 class="subscriptions__title">Подписки</h2>
+						<a href="#" class="subscriptions__question">Как выбрать подписку?</a>
+					</div>
+
+					<div class="subscriptions__items">
+						<div class="subscriptions__items-slide"></div>
+						<div class="subscriptions__items-slide"></div>
+						<div class="subscriptions__items-slide"></div>
+					</div>
+
+					<button class="popular__btn btn">Все подписки</button>
+
 				</div>
-				<div class="subscriptions__items si">
-					<div class="si__item">
+
+			</section>
+			<section class="question">
+				<div class="question__container">
+					<h2 class="question__title">Часто задаваемые <br>вопросы</h2>
+
+					<div data-spollers class="question__spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как работает межсетевой экран?
+								<picture><source srcset="img/question/spoller.webp" type="image/webp"><img src="img/question/spoller.png" alt="" class="spollers__img-arr-down"></picture>
+							</button>
+							<div class="spollers__body">Сеть нуждается в защите от внешних угроз. Хищение данных,
+								несанкционированный
+								доступ и повреждения могут сказаться на работе сети и принести серьезные убытки. Используйте
+								специальные программы и устройства, чтобы обезопасить себя от разрушительных воздействий. В этом
+								обзоре мы расскажем об межсетевом экране и рассмотрим его основные типы.
+								<span>Подробнее...</span>
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Сколько стоит установка межсетевого
+								экрана?
+								<picture><source srcset="img/question/spoller.webp" type="image/webp"><img src="img/question/spoller.png" alt="" class="spollers__img-arr-down"></picture>
+							</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Esse, et inventore quo enim eos neque
+								deserunt corporis vel aut quisquam at, blanditiis eveniet
+								nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Какие бывают межсетевые экраны?
+								<picture><source srcset="img/question/spoller.webp" type="image/webp"><img src="img/question/spoller.png" alt="" class="spollers__img-arr-down"></picture>
+							</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Esse, et inventore quo enim eos neque
+								deserunt corporis vel aut quisquam at, blanditiis eveniet
+								nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Для чего нужен межсетевой
+								экран?
+								<picture><source srcset="img/question/spoller.webp" type="image/webp"><img src="img/question/spoller.png" alt="" class="spollers__img-arr-down"></picture>
+							</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Esse, et inventore quo enim eos neque
+								deserunt corporis vel aut quisquam at, blanditiis eveniet
+								nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как выбрать межсетевой экран?
+								<picture><source srcset="img/question/spoller.webp" type="image/webp"><img src="img/question/spoller.png" alt="" class="spollers__img-arr-down"></picture>
+							</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Esse, et inventore quo enim eos neque
+								deserunt corporis vel aut quisquam at, blanditiis eveniet
+								nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
+						</div>
 					</div>
-					<div class="si__item">
-					</div>
-					<div class="si__item">
-					</div>
+
 				</div>
-				<button class="popular__btn btn">Все подписки</button>
-			</div>
-		</section>
-		<section class="question">
-			<div class="question__container">
-				<h2 class="question__title">Часто задаваемые <br>вопросы</h2>
-				<div class="question__spollers">
-					<div class="block__item">
-						<div class="block__title">
-							Как работает межсетевой экран?
-							<img src="img/question/spoller.png" alt="" class="question__arrow-up">
+			</section>
+			<section class="news">
+				<div class="news__container">
+					<h2 class="news__title">Новости</h2>
+
+					<!-- Оболочка слайдера -->
+					<div class="news__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="news__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="news__slide swiper-slide">
+								<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.png" alt="" class="news__item-pict"></picture>
+							</div>
+							<!-- Слайд -->
+							<div class="news__slide swiper-slide">
+								<picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.png" alt="" class="news__item-pict"></picture>
+							</div>
+							<!-- Слайд -->
+							<div class="news__slide swiper-slide">
+								<picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.png" alt="" class="news__item-pict"></picture>
+							</div>
+							<!-- Слайд -->
+							<div class="news__slide swiper-slide">
+								<picture><source srcset="img/news/04.webp" type="image/webp"><img src="img/news/04.png" alt="" class="news__item-pict"></picture>
+							</div>
+							<!-- Слайд -->
+							<div class="news__slide swiper-slide">
+								<picture><source srcset="img/news/05.webp" type="image/webp"><img src="img/news/05.png" alt="" class="news__item-pict"></picture>
+							</div>
 						</div>
-						<div class="block__text">Сеть нуждается в защите от внешних угроз. Хищение данных, несанкционированный
-							доступ и повреждения могут сказаться на работе сети и принести серьезные убытки. Используйте
-							специальные программы и устройства, чтобы обезопасить себя от разрушительных воздействий. В этом
-							обзоре мы расскажем об межсетевом экране и рассмотрим его основные типы. <span>Подробнее...</span>
-						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar"></div>
 					</div>
-					<div class="block__item">
-						<div class="block__title">
-							Сколько стоит установка межсетевого экрана?
-							<img src="img/question/spoller.png" alt="" class="question__arrow-up">
-						</div>
-						<div class="block__text">Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Esse, et inventore quo enim eos neque
-							deserunt corporis vel aut quisquam at, blanditiis eveniet
-							nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
-					</div>
-					<div class="block__item">
-						<div class="block__title">
-							Какие бывают межсетевые экраны?
-							<img src="img/question/spoller.png" alt="" class="question__arrow-up">
-						</div>
-						<div class="block__text">Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Esse, et inventore quo enim eos neque
-							deserunt corporis vel aut quisquam at, blanditiis eveniet
-							nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
-					</div>
-					<div class="block__item">
-						<div class="block__title">
-							Для чего нужен межсетевой экран?
-							<img src="img/question/spoller.png" alt="" class="question__arrow-up">
-						</div>
-						<div class="block__text">Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Esse, et inventore quo enim eos neque
-							deserunt corporis vel aut quisquam at, blanditiis eveniet
-							nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
-					</div>
-					<div class="block__item">
-						<div class="block__title">
-							Как выбрать межсетевой экран?
-							<img src="img/question/spoller.png" alt="" class="question__arrow-up">
-						</div>
-						<div class="block__text">Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Esse, et inventore quo enim eos neque
-							deserunt corporis vel aut quisquam at, blanditiis eveniet
-							nostrum dolor minima dolorem, consequatur necessitatibus in.</div>
-					</div>
+
 				</div>
-			</div>
-		</section>
-		<section id="news">
-			<div class="news__container">
-				<h2 class="news__title">Новости</h2>
-				<div class="news__items ni">
-					<div class="news__item">
-						<img src="img/news/01.png" alt="" class="news__item-pict">
-					</div>
-					<div class="news__item">
-						<img src="img/news/02.png" alt="" class="news__item-pict">
-					</div>
-					<div class="news__item">
-						<img src="img/news/03.png" alt="" class="news__item-pict">
-					</div>
-					<div class="news__item">
-						<img src="img/news/04.png" alt="" class="news__item-pict">
-					</div>
-					<div class="news__item">
-						<img src="img/news/05.png" alt="" class="news__item-pict">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="footer">
+			</section>
+		</main>
+		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__items">
 					<div class="footer__item footer__palo palo-footer">
@@ -297,24 +349,16 @@
 						<p class="contact-footer__link f-c-clock fa-solid fa-clock">Время работы: 9:00-18:30</p>
 					</div>
 				</div>
-			</div>
-			<hr class="footer__line">
-			<div class="footer__container-two"">
+				<hr class="footer__line">
+
 				<div class=" footer__sub-title">
-				Copyright © 2018 Meliorit.ru. Все права защищены. This site is protected by
-				reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+					Copyright © 2018 Meliorit.ru. Все права защищены. This site is protected by
+					reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+				</div>
 			</div>
+		</footer>
 	</div>
-	</section>
-	</div>
-	<!-- Подключаем jQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<!-- Подключаем Font Awesome -->
-	<script src="https://kit.fontawesome.com/1eaf757291.js" crossorigin="anonymous"></script>
-	<!-- Подключаем слайдер slick -->
-	<script src="js/slick.min.js"></script>
-	<!-- Подключаем script -->
-	<script src="js/script.js"></script>
+	<script src="js/app.min.js?_v=20230209165632"></script>
 </body>
 
 </html>
