@@ -3074,6 +3074,7 @@
                 speed: 800,
                 loop: true,
                 lazy: true,
+                simulateTouch: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true

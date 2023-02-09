@@ -928,6 +928,24 @@ a {
   cursor: pointer;
 }
 
+/* Пагинация */
+
+.news__slider .swiper-pagination {
+  bottom: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Буллеты */
+
+.news__slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #000;
+}
+
 .swiper {
   overflow: hidden;
 }
