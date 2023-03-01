@@ -604,6 +604,8 @@ a {
 
 .items-popular {
   margin-bottom: 1.875rem;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 .item-popular {
@@ -926,6 +928,11 @@ a {
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor: pointer;
+}
+
+.news__slider {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 /* Пагинация */
